@@ -20,6 +20,20 @@ public class Rectangle extends Shape {
     }
 
     @Override
+    public void print() {
+        System.out.println("""
+                               _                    _
+                              | |                  | |
+                 _ __ ___  ___| |_ __ _ _ __   __ _| | ___
+                | '__/ _ \\/ __| __/ _` | '_ \\ / _` | |/ _ \\
+                | | |  __/ (__| || (_| | | | | (_| | |  __/
+                |_|  \\___|\\___|\\__\\__,_|_| |_|\\__, |_|\\___|
+                                               __/ |
+                                              |___/
+                """);
+    }
+
+    @Override
     public String toString() {
         return String.format("Rectangle { width: %s, length: %s }", width, length);
     }

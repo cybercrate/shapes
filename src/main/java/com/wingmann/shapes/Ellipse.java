@@ -20,6 +20,20 @@ public class Ellipse extends Shape {
     }
 
     @Override
+    public void print() {
+        System.out.println("""
+                      _ _ _
+                     | | (_)
+                  ___| | |_ _ __  ___  ___
+                 / _ \\ | | | '_ \\/ __|/ _ \\
+                |  __/ | | | |_) \\__ \\  __/
+                 \\___|_|_|_| .__/|___/\\___|
+                           | |
+                           |_|
+                """);
+    }
+
+    @Override
     public String toString() {
         return String.format("Ellipse { a-radius: %s, b-radius: %s }", aRadius, bRadius);
     }

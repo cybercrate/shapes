@@ -10,8 +10,15 @@ public class Main {
                 new Square(8.8),
                 new Rectangle(7.0, 12.2));
 
-        for (var s : shapes) {
-            System.out.printf("%s (area = %s, perimeter = %s)%n", s, s.area(), s.perimeter());
+        for (var shape : shapes) {
+            System.out.printf("""
+                    %s
+                        area = %.2f
+                        perimeter = %.2f
+                    """,
+                    shape, shape.area(), shape.perimeter());
+
+            shape.print();
         }
     }
 }

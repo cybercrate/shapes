@@ -18,6 +18,18 @@ public class Circle extends Shape {
     }
 
     @Override
+    public void print() {
+        System.out.println("""
+                      _          _
+                     (_)        | |
+                  ___ _ _ __ ___| | ___
+                 / __| | '__/ __| |/ _ \\
+                | (__| | | | (__| |  __/
+                 \\___|_|_|  \\___|_|\\___|
+                """);
+    }
+
+    @Override
     public String toString() {
         return String.format("Circle { radius: %s }", radius);
     }

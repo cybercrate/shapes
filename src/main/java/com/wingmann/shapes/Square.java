@@ -18,6 +18,18 @@ public class Square extends Shape {
     }
 
     @Override
+    public void print() {
+        System.out.println("""
+                 ___  __ _ _   _  __ _ _ __ ___
+                / __|/ _` | | | |/ _` | '__/ _ \\
+                \\__ \\ (_| | |_| | (_| | | |  __/
+                |___/\\__, |\\__,_|\\__,_|_|  \\___|
+                        | |
+                        |_|
+                """);
+    }
+
+    @Override
     public String toString() {
         return String.format("Square { side: %s }", side);
     }
