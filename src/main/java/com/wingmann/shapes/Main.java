@@ -4,7 +4,7 @@ import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-        final var shapes = List.of(
+        final List<Shape> shapes = List.of(
                 new Circle(6.0),
                 new Ellipse(5.4, 7.1),
                 new Square(8.8),

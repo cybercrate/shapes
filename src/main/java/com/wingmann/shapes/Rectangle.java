@@ -1,6 +1,6 @@
 package com.wingmann.shapes;
 
-public class Rectangle extends Shape {
+public class Rectangle implements Shape {
     private final double width;
     private final double length;
 

@@ -1,6 +1,6 @@
 package com.wingmann.shapes;
 
-public class Square extends Shape {
+public class Square implements Shape {
     private final double side;
 
     public Square(double side) {

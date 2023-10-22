@@ -1,6 +1,6 @@
 package com.wingmann.shapes;
 
-public class Ellipse extends Shape {
+public class Ellipse implements Shape {
     private final double aRadius;
     private final double bRadius;
 
